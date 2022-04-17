@@ -1,0 +1,532 @@
+:root {
+   /*колір головний*/
+   --main-text-color: #757575;
+   /*колір заголовків*/
+   --title-text-color: #212121;
+   /*колір білий текст*/
+   --main-color: #FFFFFF;
+
+   /*колір акценту кнопок*/
+   --accent-color: #2196F3;
+   --hover-color: #188CE8;
+   /*колір акценту кнопок*/
+   --accent-second-color: #F5F4FA;
+   /*колір тексту футера*/
+   --footer-color: rgba(255, 255, 255, 0.6);
+
+   /*колір фону сірої секцій*/
+   --grey-color: #2F303A;
+   /*колір фону білої секцій*/
+   --main-color: #FFFFFF;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: currentColor;
+}
+
+li,
+ol {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+   margin: 0;
+}
+
+.container {
+   width: 1170px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   outline: 1px dotted green;
+}
+
+/* стиль загальний -------------------------------------*/
+.page {
+   color: var(--main-text-color);
+   background-color: var(--main-color);
+   font-family: "Roboto", serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
+/* стиль хедера-------------------------------------*/
+
+/*головний блок*/
+
+
+.header {
+   font-weight: 500;
+   line-height: 1.17;
+   letter-spacing: 0.02em;
+
+   background-color: var(--main-color);
+   border-bottom: 1px solid #ECECEC;
+}
+
+.header-list {
+   display: flex;
+   align-items: center;
+}
+
+.logo-header {
+   padding-right: 93px;
+
+}
+
+.style-nav {
+   display: flex;
+}
+
+.style-nav .link {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+
+.style-nav .link:not(:last-child) {
+   padding-right: 50px;
+}
+
+
+.info {
+   display: flex;
+   margin-left: auto;
+}
+
+.info .mail {
+   padding-right: 50px;
+}
+
+.logo-header {
+   color: var(--title-text-color);
+   text-decoration: none;
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 1.17;
+}
+
+.link {
+   color: var(--title-text-color);
+   font-size: 14px;
+   line-height: 1.14;
+   text-decoration: none;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   display: block;
+}
+
+.link:hover {
+   color: var(--accent-color);
+}
+
+.current {
+   color: var(--accent-color);
+}
+
+.info {
+   font-weight: 500;
+   line-height: 1.14;
+}
+
+.mail,
+.tel {
+   color: var(--main-text-color);
+   text-decoration: none;
+}
+
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+   color: var(--accent-color);
+}
+
+/* стиль ХЕДЕРА}-------------------------------------*/
+
+
+/* стиль ГЕГОЙ-------------------------------------*/
+.hero {
+   background-color: var(--grey-color);
+}
+
+.hero {
+   text-align: center;
+
+}
+
+.hero-title {
+   width: 696px;
+   color: var(--main-color);
+   text-transform: uppercase;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 30px;
+}
+
+.title {
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
+.hero-button {
+   color: var(--main-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.85;
+   letter-spacing: 0.06em;
+
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 32px;
+   padding-right: 32px;
+   cursor: pointer;
+
+   background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+   background-color: #188CE8;
+}
+
+.current-button {
+   color: var(--main-color);
+   background-color: var(--accent-color);
+}
+
+/* стиль ГЕГОЙ-------------------------------------*/
+
+
+
+/* стиль Головної кнопки та кнопок на другій страниці*/
+/*.button {
+   color: var(--main-color);
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.85;
+   letter-spacing: 0.06em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 32px;
+   padding-right: 32px;
+   cursor: pointer;
+
+   background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+   background-color: #188CE8;
+}*/
+
+
+
+/* стиль Особливості-------------------------------------*/
+
+/*.special {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+*/
+.galery-title-list {
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 94px;
+}
+
+.subtitle-list {
+   width: 270px;
+   padding-right: 30px;
+}
+
+.subtitle-list .p {
+   margin-bottom: 10px;
+}
+
+.subtitle-list:last-child {
+   padding-right: 0px;
+}
+
+.special-subtitle {
+   color: var(--title-text-color);
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 1.17;
+   text-transform: uppercase;
+   padding-top: 94px;
+   padding-bottom: 10px;
+}
+
+/* стиль Особливості-------------------------------------*/
+
+
+/* стиль Галерея-------------------------------------*/
+/*.galery {
+   padding-top: 0px;
+   padding-bottom: 94px;
+}
+
+.galery-title-list {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}*/
+
+.galery-title {
+   width: 376px;
+   color: var(--title-text-color);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+
+   padding-bottom: 50px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.galery-title-img {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.galery-img {
+   padding-right: 30px;
+   padding-bottom: 94px;
+}
+
+.galery-img:last-child {
+   padding-right: 0px;
+}
+
+.pict {
+   display: block;
+}
+
+/* стиль Галерея-------------------------------------*/
+
+/* стиль Команда-------------------------------------*/
+
+.team {
+   background-color: var(--accent-second-color);
+   text-align: center;
+}
+
+.team-title {
+   color: var(--title-text-color);
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.16;
+   padding-top: 94px;
+}
+
+.team-list {
+   padding-top: 50px;
+   display: flex;
+}
+
+.personal-pict {
+   display: block;
+   box-sizing: border-box;
+   width: 270px;
+
+   box-sizing: border-box;
+   background-color: #FFFFFF;
+   border-bottom-right-radius: 4px;
+   border-bottom-left-radius: 4px;
+   box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.12);
+   text-align: center;
+}
+
+.personal-card {
+   padding-bottom: 94px;
+}
+
+.personal-card:not(:last-child) {
+   margin-right: 30px;
+}
+
+.personal-name {
+   color: var(--title-text-color);
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.18;
+   padding-top: 30px;
+}
+
+.personal-position {
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+
+/* стиль Команда-------------------------------------*/
+
+
+/* стиль Футер-------------------------------------*/
+.footer {
+   background-color: var(--grey-color);
+}
+
+.footer-title {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.logo-footer {
+   color: var(--main-color);
+   text-decoration: none;
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 1.17;
+}
+
+.address {
+   color: var(--main-color);
+   text-decoration: none;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.7;
+   padding-top: 20px;
+}
+
+.mail-footer,
+.tel-footer {
+   color: var(--footer-color);
+   text-decoration: none;
+   font-style: normal;
+}
+
+.mail-footer {
+   padding-bottom: 9px;
+}
+
+/*.tel-footer {
+   padding-bottom: 60px;
+}*/
+
+.mail-footer:hover,
+.mail-footer {
+   color: var(--accent-color);
+}
+
+
+/* стиль Кнопки другої сторінки-------------------------*/
+
+.portfolio-btn {
+   display: flex;
+}
+
+.btn-menu {
+   display: flex;
+   margin: auto;
+   margin-top: 94px;
+   margin-bottom: 50px;
+}
+
+.btn-secondary {
+   color: var(--title-text-color);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.85;
+   letter-spacing: 0.03em;
+   cursor: pointer;
+   background-color: var(--accent-second-color);
+   padding-left: 22px;
+   padding-right: 22px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+.btn-list:not(:last-child) {
+   margin-right: 10px;
+}
+
+.current-btn-secondary {
+   color: var(--main-color);
+   background-color: var(--accent-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+   color: var(--main-color);
+   background-color: var(--accent-color);
+}
+
+/* стиль ПОРТФОЛІО-------------------------------*/
+
+.portfolio-menu-card {
+   display: flex;
+}
+
+.portfolio-menu {
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 94px;
+}
+
+.portfolio-card {
+   box-sizing: border-box;
+
+   display: block;
+   margin-right: 30px;
+   margin-bottom: 30px;
+}
+
+.portfolio-card:nth-child(3n + 3) {
+   margin-right: 0px;
+}
+
+
+.portfolio-card:nth-last-child(-n + 3) {
+   margin-bottom: 0px;
+}
+
+
+.caption-subcard {
+   border-bottom: 1px solid #EEEEEE;
+   border-right: 1px solid #EEEEEE;
+   border-left: 1px solid #EEEEEE;
+   text-align: center;
+}
+
+.portfolio-name {
+   color: var(--title-text-color);
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   padding-top: 20px;
+
+}
+
+.portfolio-site {
+   color: var(--main-text-color);
+   font-size: 16px;
+   line-height: 1.8;
+   padding-top: 8px;
+   padding-bottom: 20px;
+}
+
+.pict {
+   display: block;
+   padding: 0;
+}
